@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="StoryCollectionViewCell" reuseIdentifier="StoryCollectionViewCell" id="gTV-IL-0wX" customClass="StoryCollectionViewCell" customModule="Instargram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="123" height="94"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="123" height="94"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shs-3n-XBT">
+                        <rect key="frame" x="0.0" y="0.0" width="123" height="94"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-Il-ogv">
+                                <rect key="frame" x="37.5" y="0.0" width="48" height="48"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PUO-Jh-4Fq">
+                                        <rect key="frame" x="0.5" y="0.5" width="47" height="47"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LYq-ZL-0cl">
+                                                <rect key="frame" x="1" y="2.5" width="45" height="42"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="eyg-5G-dQk"/>
+                                                    <constraint firstAttribute="width" constant="45" id="wQy-83-YhH"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="47" id="3yE-mR-b01"/>
+                                            <constraint firstItem="LYq-ZL-0cl" firstAttribute="centerY" secondItem="PUO-Jh-4Fq" secondAttribute="centerY" id="MCR-OA-Pni"/>
+                                            <constraint firstAttribute="height" constant="47" id="QMc-WE-zw5"/>
+                                            <constraint firstItem="LYq-ZL-0cl" firstAttribute="centerX" secondItem="PUO-Jh-4Fq" secondAttribute="centerX" id="dOl-6Q-Tq9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstItem="PUO-Jh-4Fq" firstAttribute="centerY" secondItem="fR4-Il-ogv" secondAttribute="centerY" id="GrF-4u-q7g"/>
+                                    <constraint firstItem="PUO-Jh-4Fq" firstAttribute="centerX" secondItem="fR4-Il-ogv" secondAttribute="centerX" id="a2k-sr-fH4"/>
+                                    <constraint firstAttribute="height" constant="48" id="jID-1j-mv9"/>
+                                    <constraint firstAttribute="width" constant="48" id="x8n-xd-zaY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12O-qV-h2B">
+                                <rect key="frame" x="48" y="50" width="27" height="12"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="12O-qV-h2B" firstAttribute="centerX" secondItem="shs-3n-XBT" secondAttribute="centerX" id="BQE-Mx-2Cs"/>
+                            <constraint firstItem="12O-qV-h2B" firstAttribute="top" secondItem="fR4-Il-ogv" secondAttribute="bottom" constant="2" id="VMW-We-tSS"/>
+                            <constraint firstItem="fR4-Il-ogv" firstAttribute="top" secondItem="shs-3n-XBT" secondAttribute="top" id="XaN-N3-EU2"/>
+                            <constraint firstItem="fR4-Il-ogv" firstAttribute="centerX" secondItem="shs-3n-XBT" secondAttribute="centerX" id="wsL-mC-QIn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="shs-3n-XBT" secondAttribute="bottom" id="1cp-i5-uvC"/>
+                <constraint firstItem="shs-3n-XBT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DdW-mw-geD"/>
+                <constraint firstAttribute="trailing" secondItem="shs-3n-XBT" secondAttribute="trailing" id="Qnl-IL-90Q"/>
+                <constraint firstItem="shs-3n-XBT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oWt-5d-Rtm"/>
+            </constraints>
+            <size key="customSize" width="123" height="94"/>
+            <connections>
+                <outlet property="imageViewBackground" destination="fR4-Il-ogv" id="K15-ev-jAT"/>
+                <outlet property="imageViewuserProfile" destination="LYq-ZL-0cl" id="R4z-zJ-eSj"/>
+                <outlet property="userProfileBackground" destination="PUO-Jh-4Fq" id="mFh-ka-SsU"/>
+            </connections>
+            <point key="canvasLocation" x="190.57971014492756" y="105.13392857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

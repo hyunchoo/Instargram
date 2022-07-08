@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0037CFE82876B262005CB0D0 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFE62876B262005CB0D0 /* StoryTableViewCell.swift */; };
+		0037CFE92876B262005CB0D0 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0037CFE72876B262005CB0D0 /* StoryTableViewCell.xib */; };
+		0037CFEC2876B7F5005CB0D0 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFEA2876B7F5005CB0D0 /* StoryCollectionViewCell.swift */; };
+		0037CFED2876B7F5005CB0D0 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0037CFEB2876B7F5005CB0D0 /* StoryCollectionViewCell.xib */; };
 		004257D128747751008FF167 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004257D028747751008FF167 /* HomeViewController.swift */; };
 		004257D528754E9A008FF167 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004257D328754E9A008FF167 /* FeedTableViewCell.swift */; };
 		00FF7E3A2872C0BD0081BFB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF7E392872C0BD0081BFB6 /* AppDelegate.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0037CFE62876B262005CB0D0 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		0037CFE72876B262005CB0D0 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		0037CFEA2876B7F5005CB0D0 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		0037CFEB2876B7F5005CB0D0 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		004257D028747751008FF167 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		004257D328754E9A008FF167 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		00FF7E362872C0BD0081BFB6 /* Instargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				004257D328754E9A008FF167 /* FeedTableViewCell.swift */,
+				0037CFE62876B262005CB0D0 /* StoryTableViewCell.swift */,
+				0037CFE72876B262005CB0D0 /* StoryTableViewCell.xib */,
+				0037CFEA2876B7F5005CB0D0 /* StoryCollectionViewCell.swift */,
+				0037CFEB2876B7F5005CB0D0 /* StoryCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -151,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FF7E462872C0BE0081BFB6 /* LaunchScreen.storyboard in Resources */,
+				0037CFED2876B7F5005CB0D0 /* StoryCollectionViewCell.xib in Resources */,
 				00FF7E432872C0BE0081BFB6 /* Assets.xcassets in Resources */,
 				00FF7E412872C0BD0081BFB6 /* Main.storyboard in Resources */,
+				0037CFE92876B262005CB0D0 /* StoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,12 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0037CFEC2876B7F5005CB0D0 /* StoryCollectionViewCell.swift in Sources */,
 				004257D128747751008FF167 /* HomeViewController.swift in Sources */,
 				004257D528754E9A008FF167 /* FeedTableViewCell.swift in Sources */,
 				00FF7E3E2872C0BD0081BFB6 /* LoginViewController.swift in Sources */,
 				00FF7E3A2872C0BD0081BFB6 /* AppDelegate.swift in Sources */,
 				00FF7E3C2872C0BD0081BFB6 /* SceneDelegate.swift in Sources */,
 				00FF7E502872D9900081BFB6 /* RegisterViewController.swift in Sources */,
+				0037CFE82876B262005CB0D0 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
