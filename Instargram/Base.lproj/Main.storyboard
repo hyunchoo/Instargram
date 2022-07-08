@@ -122,21 +122,57 @@
             </objects>
             <point key="canvasLocation" x="932" y="-218"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="eAb-oM-t71">
             <objects>
-                <viewController id="vt5-d6-OUj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="vt5-d6-OUj" customClass="ProfileViewController" customModule="Instargram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7Q-ly-Cml">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jdc-Kw-ykO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="676"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K67-30-7c9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Et2-0X-le0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Et2-0X-le0" firstAttribute="trailing" secondItem="jdc-Kw-ykO" secondAttribute="trailing" id="Qbo-wV-twW"/>
+                            <constraint firstItem="jdc-Kw-ykO" firstAttribute="leading" secondItem="Et2-0X-le0" secondAttribute="leading" id="lV7-Vy-d4F"/>
+                            <constraint firstItem="Et2-0X-le0" firstAttribute="bottom" secondItem="jdc-Kw-ykO" secondAttribute="bottom" id="vsF-8K-pg5"/>
+                            <constraint firstItem="jdc-Kw-ykO" firstAttribute="top" secondItem="Et2-0X-le0" secondAttribute="top" id="zzG-8v-aOv"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="eu4-5h-DAG"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="V2b-3K-Vcm">
+                        <barButtonItem key="leftBarButtonItem" title="NickName" id="b5r-Mm-nch">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="line.3.horizontal" catalog="system" id="8Mx-Eg-5iA">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                            <barButtonItem image="plus.app" catalog="system" id="rUV-uh-lYE">
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="profileCollectionView" destination="jdc-Kw-ykO" id="Kjc-OK-Al9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjo-WS-Nn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1761" y="1275"/>
+            <point key="canvasLocation" x="2671.0144927536235" y="1275"/>
         </scene>
         <!--Home-->
         <scene sceneID="eg4-yw-11a">
@@ -372,7 +408,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="eir-a7-3md" kind="relationship" relationship="viewControllers" id="tAe-1N-nio"/>
-                        <segue destination="vt5-d6-OUj" kind="relationship" relationship="viewControllers" id="mYK-sQ-IS3"/>
+                        <segue destination="lsa-bW-Stx" kind="relationship" relationship="viewControllers" id="mYK-sQ-IS3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJ4-og-pab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -538,6 +574,25 @@
             </objects>
             <point key="canvasLocation" x="22" y="-218"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="Dzm-wR-0np">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lsa-bW-Stx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" id="eu4-5h-DAG"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HA5-DP-hLc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vt5-d6-OUj" kind="relationship" relationship="rootViewController" id="41N-XG-bEz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Af4-2Q-fsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1760.8695652173915" y="1275"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="112" height="128"/>
@@ -545,6 +600,7 @@
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="ic_catstagram_logo-1" width="476" height="96"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
