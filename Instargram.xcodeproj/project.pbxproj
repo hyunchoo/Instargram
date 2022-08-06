@@ -14,6 +14,27 @@
 		0037CFF0287810F0005CB0D0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFEF287810F0005CB0D0 /* ProfileViewController.swift */; };
 		0037CFF428781652005CB0D0 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFF228781652005CB0D0 /* ProfileCollectionViewCell.swift */; };
 		0037CFF528781652005CB0D0 /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0037CFF328781652005CB0D0 /* ProfileCollectionViewCell.xib */; };
+		0037CFFA28868609005CB0D0 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFF828868609005CB0D0 /* PostCollectionViewCell.swift */; };
+		0037CFFB28868609005CB0D0 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0037CFF928868609005CB0D0 /* PostCollectionViewCell.xib */; };
+		0037CFFE2887D3CF005CB0D0 /* FeedAPIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFFD2887D3CF005CB0D0 /* FeedAPIInput.swift */; };
+		0037D0002887EBF8005CB0D0 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037CFFF2887EBF8005CB0D0 /* FeedModel.swift */; };
+		0037D0022887EC2D005CB0D0 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D0012887EC2D005CB0D0 /* FeedDataManager.swift */; };
+		0037D005288A97A5005CB0D0 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D004288A97A5005CB0D0 /* FeedUploadInput.swift */; };
+		0037D007288A97DE005CB0D0 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D006288A97DE005CB0D0 /* FeedUploadModel.swift */; };
+		0037D009288A98F7005CB0D0 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D008288A98F7005CB0D0 /* FeedUploadDataManager.swift */; };
+		0037D00B288D17AC005CB0D0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0037D00A288D17AC005CB0D0 /* GoogleService-Info.plist */; };
+		0037D00E288FA405005CB0D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D00D288FA405005CB0D0 /* User.swift */; };
+		0037D011288FAB60005CB0D0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D010288FAB60005CB0D0 /* AuthService.swift */; };
+		0037D013288FBB00005CB0D0 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D012288FBB00005CB0D0 /* ImageUploader.swift */; };
+		0037D015288FC230005CB0D0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D014288FC230005CB0D0 /* Post.swift */; };
+		0037D017288FC280005CB0D0 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D016288FC280005CB0D0 /* PostService.swift */; };
+		0037D01A288FC2C3005CB0D0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D019288FC2C3005CB0D0 /* Constants.swift */; };
+		0037D01D288FC7C8005CB0D0 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D01C288FC7C8005CB0D0 /* UploadViewController.swift */; };
+		0037D01F288FCB4B005CB0D0 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D01E288FCB4B005CB0D0 /* PickerViewController.swift */; };
+		0037D021288FCC5B005CB0D0 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0037D020288FCC5B005CB0D0 /* UserService.swift */; };
+		003EFF8D2897BED6002D868F /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EFF8C2897BED6002D868F /* UserFeedModel.swift */; };
+		003EFF8F2897C4FD002D868F /* UserFeedDatamanager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EFF8E2897C4FD002D868F /* UserFeedDatamanager.swift */; };
+		003EFF91289E53D1002D868F /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003EFF90289E53D1002D868F /* DeleteUserFeed.swift */; };
 		004257D128747751008FF167 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004257D028747751008FF167 /* HomeViewController.swift */; };
 		004257D528754E9A008FF167 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004257D328754E9A008FF167 /* FeedTableViewCell.swift */; };
 		00FF7E3A2872C0BD0081BFB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF7E392872C0BD0081BFB6 /* AppDelegate.swift */; };
@@ -23,6 +44,7 @@
 		00FF7E432872C0BE0081BFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FF7E422872C0BE0081BFB6 /* Assets.xcassets */; };
 		00FF7E462872C0BE0081BFB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FF7E442872C0BE0081BFB6 /* LaunchScreen.storyboard */; };
 		00FF7E502872D9900081BFB6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FF7E4F2872D9900081BFB6 /* RegisterViewController.swift */; };
+		1C2197B97CF88AD858B5A1FD /* Pods_Instargram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8382C912FD266005AF502A20 /* Pods_Instargram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +55,27 @@
 		0037CFEF287810F0005CB0D0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0037CFF228781652005CB0D0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		0037CFF328781652005CB0D0 /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		0037CFF828868609005CB0D0 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		0037CFF928868609005CB0D0 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		0037CFFD2887D3CF005CB0D0 /* FeedAPIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIInput.swift; sourceTree = "<group>"; };
+		0037CFFF2887EBF8005CB0D0 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		0037D0012887EC2D005CB0D0 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
+		0037D004288A97A5005CB0D0 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		0037D006288A97DE005CB0D0 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		0037D008288A98F7005CB0D0 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
+		0037D00A288D17AC005CB0D0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0037D00D288FA405005CB0D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0037D010288FAB60005CB0D0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		0037D012288FBB00005CB0D0 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		0037D014288FC230005CB0D0 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0037D016288FC280005CB0D0 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		0037D019288FC2C3005CB0D0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0037D01C288FC7C8005CB0D0 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		0037D01E288FCB4B005CB0D0 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		0037D020288FCC5B005CB0D0 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		003EFF8C2897BED6002D868F /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
+		003EFF8E2897C4FD002D868F /* UserFeedDatamanager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDatamanager.swift; sourceTree = "<group>"; };
+		003EFF90289E53D1002D868F /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
 		004257D028747751008FF167 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		004257D328754E9A008FF167 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		00FF7E362872C0BD0081BFB6 /* Instargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +87,9 @@
 		00FF7E452872C0BE0081BFB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FF7E472872C0BE0081BFB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00FF7E4F2872D9900081BFB6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		8382C912FD266005AF502A20 /* Pods_Instargram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instargram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6F452B80AFBEBA8961C764 /* Pods-Instargram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instargram.release.xcconfig"; path = "Target Support Files/Pods-Instargram/Pods-Instargram.release.xcconfig"; sourceTree = "<group>"; };
+		DB77397D62EBA1C711FCEBE6 /* Pods-Instargram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instargram.debug.xcconfig"; path = "Target Support Files/Pods-Instargram/Pods-Instargram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,15 +97,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C2197B97CF88AD858B5A1FD /* Pods_Instargram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001BA13528977E0400D577D1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				00FF7E3B2872C0BD0081BFB6 /* SceneDelegate.swift */,
+				00FF7E392872C0BD0081BFB6 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		001BA13828977E2800D577D1 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				00FF7E3D2872C0BD0081BFB6 /* LoginViewController.swift */,
+				00FF7E4F2872D9900081BFB6 /* RegisterViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		0037CFEE287810C8005CB0D0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				003EFF8B2897BEBB002D868F /* UserFeedDataManager */,
 				0037CFEF287810F0005CB0D0 /* ProfileViewController.swift */,
 				0037CFF128781637005CB0D0 /* Cell */,
 			);
@@ -69,16 +135,103 @@
 		0037CFF128781637005CB0D0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0037CFF228781652005CB0D0 /* ProfileCollectionViewCell.swift */,
-				0037CFF328781652005CB0D0 /* ProfileCollectionViewCell.xib */,
+				0037CFF7288685DE005CB0D0 /* PostCell */,
+				0037CFF6288685CE005CB0D0 /* ProfileCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0037CFF6288685CE005CB0D0 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				0037CFF228781652005CB0D0 /* ProfileCollectionViewCell.swift */,
+				0037CFF328781652005CB0D0 /* ProfileCollectionViewCell.xib */,
+				004257D228754E7A008FF167 /* Cell */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		0037CFF7288685DE005CB0D0 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				0037CFF828868609005CB0D0 /* PostCollectionViewCell.swift */,
+				0037CFF928868609005CB0D0 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
+			sourceTree = "<group>";
+		};
+		0037CFFC2887D3A9005CB0D0 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0037CFFD2887D3CF005CB0D0 /* FeedAPIInput.swift */,
+				0037CFFF2887EBF8005CB0D0 /* FeedModel.swift */,
+				0037D0012887EC2D005CB0D0 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
+		0037D003288A977D005CB0D0 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0037D004288A97A5005CB0D0 /* FeedUploadInput.swift */,
+				0037D006288A97DE005CB0D0 /* FeedUploadModel.swift */,
+				0037D008288A98F7005CB0D0 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
+			sourceTree = "<group>";
+		};
+		0037D00C288FA3F2005CB0D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0037D00D288FA405005CB0D0 /* User.swift */,
+				0037D014288FC230005CB0D0 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0037D00F288FAB4B005CB0D0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0037D010288FAB60005CB0D0 /* AuthService.swift */,
+				0037D012288FBB00005CB0D0 /* ImageUploader.swift */,
+				0037D016288FC280005CB0D0 /* PostService.swift */,
+				0037D020288FCC5B005CB0D0 /* UserService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		0037D018288FC2AE005CB0D0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0037D019288FC2C3005CB0D0 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0037D01B288FC7B0005CB0D0 /* UploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				0037D01C288FC7C8005CB0D0 /* UploadViewController.swift */,
+				0037D01E288FCB4B005CB0D0 /* PickerViewController.swift */,
+			);
+			path = UploadImage;
+			sourceTree = "<group>";
+		};
+		003EFF8B2897BEBB002D868F /* UserFeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				003EFF8C2897BED6002D868F /* UserFeedModel.swift */,
+				003EFF8E2897C4FD002D868F /* UserFeedDatamanager.swift */,
+				003EFF90289E53D1002D868F /* DeleteUserFeed.swift */,
+			);
+			path = UserFeedDataManager;
 			sourceTree = "<group>";
 		};
 		004257CF28747744008FF167 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				004257D228754E7A008FF167 /* Cell */,
+				0037D003288A977D005CB0D0 /* FeedUploadDataManager */,
+				0037CFFC2887D3A9005CB0D0 /* FeedDataManager */,
 				004257D028747751008FF167 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -101,6 +254,8 @@
 			children = (
 				00FF7E382872C0BD0081BFB6 /* Instargram */,
 				00FF7E372872C0BD0081BFB6 /* Products */,
+				87702A2D30CEEA71CD5D643D /* Pods */,
+				380B3FBBF7BA7072113BB078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,18 +270,38 @@
 		00FF7E382872C0BD0081BFB6 /* Instargram */ = {
 			isa = PBXGroup;
 			children = (
+				001BA13528977E0400D577D1 /* App */,
+				001BA13828977E2800D577D1 /* Auth */,
+				0037D01B288FC7B0005CB0D0 /* UploadImage */,
+				0037D00F288FAB4B005CB0D0 /* API */,
+				0037D00C288FA3F2005CB0D0 /* Model */,
 				0037CFEE287810C8005CB0D0 /* Profile */,
 				004257CF28747744008FF167 /* Home */,
-				00FF7E392872C0BD0081BFB6 /* AppDelegate.swift */,
-				00FF7E3B2872C0BD0081BFB6 /* SceneDelegate.swift */,
+				0037D018288FC2AE005CB0D0 /* Utils */,
 				00FF7E3F2872C0BD0081BFB6 /* Main.storyboard */,
-				00FF7E3D2872C0BD0081BFB6 /* LoginViewController.swift */,
-				00FF7E4F2872D9900081BFB6 /* RegisterViewController.swift */,
 				00FF7E422872C0BE0081BFB6 /* Assets.xcassets */,
 				00FF7E442872C0BE0081BFB6 /* LaunchScreen.storyboard */,
 				00FF7E472872C0BE0081BFB6 /* Info.plist */,
+				0037D00A288D17AC005CB0D0 /* GoogleService-Info.plist */,
 			);
 			path = Instargram;
+			sourceTree = "<group>";
+		};
+		380B3FBBF7BA7072113BB078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8382C912FD266005AF502A20 /* Pods_Instargram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87702A2D30CEEA71CD5D643D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB77397D62EBA1C711FCEBE6 /* Pods-Instargram.debug.xcconfig */,
+				8C6F452B80AFBEBA8961C764 /* Pods-Instargram.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +311,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00FF7E4A2872C0BE0081BFB6 /* Build configuration list for PBXNativeTarget "Instargram" */;
 			buildPhases = (
+				8A7E723962C828A7B0754747 /* [CP] Check Pods Manifest.lock */,
 				00FF7E322872C0BD0081BFB6 /* Sources */,
 				00FF7E332872C0BD0081BFB6 /* Frameworks */,
 				00FF7E342872C0BD0081BFB6 /* Resources */,
+				E2666DDD928C5BD87DEC58B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,8 +365,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00FF7E462872C0BE0081BFB6 /* LaunchScreen.storyboard in Resources */,
+				0037D00B288D17AC005CB0D0 /* GoogleService-Info.plist in Resources */,
 				0037CFED2876B7F5005CB0D0 /* StoryCollectionViewCell.xib in Resources */,
 				0037CFF528781652005CB0D0 /* ProfileCollectionViewCell.xib in Resources */,
+				0037CFFB28868609005CB0D0 /* PostCollectionViewCell.xib in Resources */,
 				00FF7E432872C0BE0081BFB6 /* Assets.xcassets in Resources */,
 				00FF7E412872C0BD0081BFB6 /* Main.storyboard in Resources */,
 				0037CFE92876B262005CB0D0 /* StoryTableViewCell.xib in Resources */,
@@ -198,21 +377,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8A7E723962C828A7B0754747 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Instargram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2666DDD928C5BD87DEC58B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instargram/Pods-Instargram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Instargram/Pods-Instargram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Instargram/Pods-Instargram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		00FF7E322872C0BD0081BFB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0037CFEC2876B7F5005CB0D0 /* StoryCollectionViewCell.swift in Sources */,
+				003EFF91289E53D1002D868F /* DeleteUserFeed.swift in Sources */,
+				0037D01D288FC7C8005CB0D0 /* UploadViewController.swift in Sources */,
+				0037D0022887EC2D005CB0D0 /* FeedDataManager.swift in Sources */,
 				004257D128747751008FF167 /* HomeViewController.swift in Sources */,
+				003EFF8F2897C4FD002D868F /* UserFeedDatamanager.swift in Sources */,
 				004257D528754E9A008FF167 /* FeedTableViewCell.swift in Sources */,
+				0037D009288A98F7005CB0D0 /* FeedUploadDataManager.swift in Sources */,
+				0037D021288FCC5B005CB0D0 /* UserService.swift in Sources */,
+				0037D017288FC280005CB0D0 /* PostService.swift in Sources */,
+				0037D01A288FC2C3005CB0D0 /* Constants.swift in Sources */,
 				00FF7E3E2872C0BD0081BFB6 /* LoginViewController.swift in Sources */,
+				0037D011288FAB60005CB0D0 /* AuthService.swift in Sources */,
 				0037CFF428781652005CB0D0 /* ProfileCollectionViewCell.swift in Sources */,
 				00FF7E3A2872C0BD0081BFB6 /* AppDelegate.swift in Sources */,
 				00FF7E3C2872C0BD0081BFB6 /* SceneDelegate.swift in Sources */,
 				0037CFF0287810F0005CB0D0 /* ProfileViewController.swift in Sources */,
+				003EFF8D2897BED6002D868F /* UserFeedModel.swift in Sources */,
+				0037D0002887EBF8005CB0D0 /* FeedModel.swift in Sources */,
+				0037D015288FC230005CB0D0 /* Post.swift in Sources */,
+				0037D007288A97DE005CB0D0 /* FeedUploadModel.swift in Sources */,
+				0037CFFA28868609005CB0D0 /* PostCollectionViewCell.swift in Sources */,
+				0037D01F288FCB4B005CB0D0 /* PickerViewController.swift in Sources */,
 				00FF7E502872D9900081BFB6 /* RegisterViewController.swift in Sources */,
+				0037D00E288FA405005CB0D0 /* User.swift in Sources */,
 				0037CFE82876B262005CB0D0 /* StoryTableViewCell.swift in Sources */,
+				0037D013288FBB00005CB0D0 /* ImageUploader.swift in Sources */,
+				0037CFFE2887D3CF005CB0D0 /* FeedAPIInput.swift in Sources */,
+				0037D005288A97A5005CB0D0 /* FeedUploadInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +596,7 @@
 		};
 		00FF7E4B2872C0BE0081BFB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB77397D62EBA1C711FCEBE6 /* Pods-Instargram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -384,6 +625,7 @@
 		};
 		00FF7E4C2872C0BE0081BFB6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6F452B80AFBEBA8961C764 /* Pods-Instargram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

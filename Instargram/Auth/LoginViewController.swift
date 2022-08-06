@@ -37,9 +37,20 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTap(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        AuthService.logUserIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print("DEBUG : Failed to log user in \(error.localizedDescription)")
+                return
+            } else {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+        
+      
         
     }
     

@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instargram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Instargram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="width" secondItem="E1z-oi-lAA" secondAttribute="height" multiplier="10:3" id="FAV-zG-eDn"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-wK-zNb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123123" borderStyle="roundedRect" placeholder="비밀번호를 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sa8-wK-zNb">
                                 <rect key="frame" x="10" y="431" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -31,7 +31,7 @@
                                     <action selector="passwordTextField:" destination="BYZ-38-t0r" eventType="editingChanged" id="JSk-FT-hmf"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKN-0a-HBl">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dd@dd.dd" borderStyle="roundedRect" placeholder="이메일을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wKN-0a-HBl">
                                 <rect key="frame" x="10" y="387" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -137,7 +137,7 @@
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
@@ -159,6 +159,9 @@
                         <rightBarButtonItems>
                             <barButtonItem image="line.3.horizontal" catalog="system" id="8Mx-Eg-5iA">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="logOutButton:" destination="vt5-d6-OUj" id="5h1-s5-TCp"/>
+                                </connections>
                             </barButtonItem>
                             <barButtonItem image="plus.app" catalog="system" id="rUV-uh-lYE">
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vjo-WS-Nn6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2671.0144927536235" y="1275"/>
+            <point key="canvasLocation" x="2113" y="1315"/>
         </scene>
         <!--Home-->
         <scene sceneID="eg4-yw-11a">
@@ -198,6 +201,9 @@
                                             </barButtonItem>
                                             <barButtonItem title="Item" image="plus.app" catalog="system" id="NRJ-FG-aVv">
                                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <action selector="albumButton:" destination="eir-a7-3md" id="q3T-x7-i2u"/>
+                                                </connections>
                                             </barButtonItem>
                                         </rightBarButtonItems>
                                     </navigationItem>
@@ -388,14 +394,14 @@
                             <constraint firstItem="h3e-dI-SQa" firstAttribute="trailing" secondItem="qzA-zP-7Nu" secondAttribute="trailing" id="rXd-y3-8Hj"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="VfR-WY-dR4"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="VfR-WY-dR4"/>
                     <connections>
                         <outlet property="tableView" destination="qzA-zP-7Nu" id="VG7-PZ-zbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qSa-ao-fEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21.739130434782609" y="1275"/>
+            <point key="canvasLocation" x="-14" y="1315"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dcc-W5-fTT">
@@ -405,15 +411,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="eir-a7-3md" kind="relationship" relationship="viewControllers" id="tAe-1N-nio"/>
-                        <segue destination="lsa-bW-Stx" kind="relationship" relationship="viewControllers" id="mYK-sQ-IS3"/>
+                        <segue destination="ebY-A0-hou" kind="relationship" relationship="viewControllers" id="R5G-eU-mWK"/>
+                        <segue destination="lsa-bW-Stx" kind="relationship" relationship="viewControllers" id="zIY-5I-G3M"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJ4-og-pab" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="932" y="549"/>
+        </scene>
+        <!--Picker View Controller-->
+        <scene sceneID="W1J-se-GJQ">
+            <objects>
+                <viewController id="ebY-A0-hou" customClass="PickerViewController" customModule="Instargram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrK-OV-hhk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q38-28-8YY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus" catalog="system" id="C3e-0B-aHX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K2v-8m-Ma2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3268" y="1302"/>
+        </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="yFG-FW-N2I">
+            <objects>
+                <viewController id="ZkU-9Z-yj3" customClass="UploadViewController" customModule="Instargram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vPo-Hy-liN" customClass="Upload">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="8qQ-eJ-9ON"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XVF-2U-KOV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4342" y="1306"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="mTd-eA-jaD">
@@ -578,7 +619,7 @@
         <scene sceneID="Dzm-wR-0np">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lsa-bW-Stx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="eu4-5h-DAG"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="eu4-5h-DAG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HA5-DP-hLc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -591,7 +632,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Af4-2Q-fsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8695652173915" y="1275"/>
+            <point key="canvasLocation" x="932" y="1315"/>
         </scene>
     </scenes>
     <resources>
@@ -599,11 +640,14 @@
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
         <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="ic_catstagram_logo-1" width="476" height="96"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="message" catalog="system" width="128" height="113"/>
         <image name="paperplane" catalog="system" width="128" height="118"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <namedColor name="AccentColor">

@@ -6,8 +6,14 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
+
+
 
 class RegisterViewController: UIViewController {
+    var ref: DocumentReference? = nil
 //MARK: - IBoutlet
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -35,8 +41,20 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButtonTap(_ sender: UIButton) {
         let email = emailTextField.text ?? ""
         let password = passwordTextField.text ?? ""
-    }
+        let nickname = NicknameTextField.text ?? ""
+        let username = nameTextField.text ?? ""
+    let credentails = AuthCredentials(email: email, password: password, fullname: nickname, username: username)
+        AuthService.registerUser(withCredential: credentails) { error in
+            print(error)
+        }
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
+                    vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+                    
+                    
+                }
+            
+            
+        }
     
-
-
-}
+    
